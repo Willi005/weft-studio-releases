@@ -30,7 +30,7 @@ Claude Code、Codex、OpenCode、Antigravity に対応した Linux / Windows 向
   <a href="https://github.com/Willi005/weft-studio-releases/releases"><b>ダウンロード</b></a>
 </p>
 
-![Weft Studio のエディター：キャンバス上のランディングページで見出しが選択され、右にスタイルインスペクター、左のチャットにエージェントへの依頼が表示されている](docs/assets/screenshots/editor-dark.webp)
+![Weft Studio のエディター：キャンバス上の法律アシスタントのランディングページで見出しが選択され、右にスタイルインスペクター、左にエージェントとの会話が表示されている](docs/assets/screenshots/editor-dark.webp)
 
 **Weft Studio**は、あなたと AI コーディングエージェントが同じキャンバスで作業するデザインツールです。画面の内容を伝えると、エージェントがそれを描いていく様子が見られ、そのあと手で移動したり、スタイルを変えたり、書き直したりできます。各デザインは読みやすい HTML ファイル（`design.ws.html`）として保存されるフレームで、それぞれ専用のエージェント（**Claude Code、Codex、OpenCode、Antigravity**）を持ちます。あなたの変更もエージェントの書き込みも、すぐに反映されます。
 
@@ -47,7 +47,7 @@ Claude Code、Codex、OpenCode、Antigravity に対応した Linux / Windows 向
 - **デザインをコードへ：** 「Send to a coding agent…」でプロンプトをコピーすると、Claude Code、Codex、Gemini CLI、OpenCode が読み取り専用の **MCP** サーバー経由でデザインを読み、あなたのプロジェクトに実装します。
 - **プロジェクト管理：** カバー画像、名前の変更、ゴミ箱を備えたホーム画面。
 
-![キャンバスに並んだ 3 つのデザイン：旅行のランディングページ、コーヒー注文アプリ、分析ダッシュボード](docs/assets/screenshots/canvas-dark.webp)
+![キャンバス上の 5 つのフレーム：同じランディングページのライト版とダーク版、そしてアシスタント・プライバシー・プロフィールの各ビュー](docs/assets/screenshots/canvas-dark.webp)
 
 ## インストール
 
