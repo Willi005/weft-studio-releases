@@ -30,7 +30,7 @@ Una app de escritorio para Linux y Windows que funciona con Claude Code, Codex, 
   <a href="https://github.com/Willi005/weft-studio-releases/releases"><b>Descargar</b></a>
 </p>
 
-![El editor de Weft Studio: una landing en el lienzo con su titular seleccionado, el inspector de estilos a la derecha y un pedido al agente en el chat](docs/assets/screenshots/editor-dark.webp)
+![El editor de Weft Studio: la landing de un asistente legal en el lienzo con su titular seleccionado, el inspector de estilos a la derecha y la conversación con el agente a la izquierda](docs/assets/screenshots/editor-dark.webp)
 
 **Weft Studio** es una herramienta de diseño en la que tú y un agente de IA trabajáis sobre el mismo lienzo. Describes una pantalla, ves cómo el agente la dibuja y después la mueves, le cambias el estilo o la reescribes a mano. Cada diseño es un frame guardado como un archivo HTML legible (`design.ws.html`) y tiene su propio agente: **Claude Code, Codex, OpenCode o Antigravity**. Lo que cambias tú y lo que escribe el agente se ve al instante.
 
@@ -47,7 +47,7 @@ Este repositorio solo publica los instaladores; el código no está aquí.
 - **Llevar el diseño a tu código:** «Send to a coding agent…» copia un prompt para que Claude Code, Codex, Gemini CLI u OpenCode lean el diseño por **MCP** (solo lectura) y lo pasen a tu proyecto.
 - **Proyectos:** un inicio con portadas, renombrado y papelera.
 
-![Tres diseños uno al lado del otro en el lienzo: una landing de viajes, una app para pedir café y un panel de analítica](docs/assets/screenshots/canvas-dark.webp)
+![Cinco frames en el lienzo: la misma landing en claro y en oscuro, y sus vistas de asistente, privacidad y perfil](docs/assets/screenshots/canvas-dark.webp)
 
 ## Instalar
 

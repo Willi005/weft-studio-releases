@@ -30,7 +30,7 @@ Eine Desktop-App für Linux und Windows, die mit Claude Code, Codex, OpenCode un
   <a href="https://github.com/Willi005/weft-studio-releases/releases"><b>Download</b></a>
 </p>
 
-![Der Weft-Studio-Editor: eine Landingpage auf der Leinwand mit ausgewählter Überschrift, rechts der Stil-Inspektor und im Chat eine Anfrage an den Agenten](docs/assets/screenshots/editor-dark.webp)
+![Der Weft-Studio-Editor: die Landingpage eines Rechtsassistenten auf der Leinwand mit ausgewählter Überschrift, rechts der Stil-Inspektor und links das Gespräch mit dem Agenten](docs/assets/screenshots/editor-dark.webp)
 
 **Weft Studio** ist ein Design-Werkzeug, in dem du und ein KI-Agent auf derselben Leinwand arbeiten. Beschreibe einen Bildschirm, sieh zu, wie der Agent ihn zeichnet, und verschiebe, gestalte oder schreibe ihn dann von Hand um. Jedes Design ist ein Frame, gespeichert als lesbare HTML-Datei (`design.ws.html`), mit einem eigenen Agenten: **Claude Code, Codex, OpenCode oder Antigravity**. Was du änderst und was der Agent schreibt, ist sofort zu sehen.
 
@@ -47,7 +47,7 @@ Dieses Repository veröffentlicht nur die Installationspakete; der Quellcode lie
 - **Das Design in deinen Code bringen:** „Send to a coding agent…" kopiert einen Prompt, damit Claude Code, Codex, Gemini CLI oder OpenCode das Design über einen schreibgeschützten **MCP**-Server lesen und in dein Projekt übernehmen.
 - **Projekte:** ein Startbildschirm mit Titelbildern, Umbenennen und Papierkorb.
 
-![Drei Designs nebeneinander auf der Leinwand: eine Reise-Landingpage, eine Kaffee-Bestell-App und ein Analyse-Dashboard](docs/assets/screenshots/canvas-dark.webp)
+![Fünf Frames auf der Leinwand: dieselbe Landingpage hell und dunkel, dazu ihre Ansichten Assistent, Datenschutz und Profil](docs/assets/screenshots/canvas-dark.webp)
 
 ## Installation
 

@@ -85,7 +85,7 @@
           <div class="shot">
             <picture>
               <source srcset="../assets/screenshots/editor-dark.webp" media="(prefers-color-scheme: dark)" />
-              <img src="../assets/screenshots/editor-light.webp" width="2000" height="1250" alt="El editor de Weft Studio: una landing en el lienzo con su titular seleccionado, el inspector de estilos a la derecha y un pedido al agente escrito en el chat de la izquierda." />
+              <img src="../assets/screenshots/editor-light.webp" width="2000" height="1250" alt="El editor de Weft Studio: la landing de un asistente legal en el lienzo con su titular seleccionado, el inspector de estilos a la derecha y la conversación con el agente a la izquierda." />
             </picture>
           </div>
         </div>
@@ -113,15 +113,17 @@
               <li>Importa los archivos <code>.dc.html</code> de Claude Design.</li>
             </ul>
           </div>
-<pre class="code" aria-label="Parte de un archivo de diseño"><span class="t">&lt;cw-design</span> <span class="a">version</span>="1"<span class="t">&gt;</span>
-  <span class="t">&lt;main</span> <span class="a">data-cw-id</span>="main01" <span class="a">style</span>="padding:56px"<span class="t">&gt;</span>
-    <span class="t">&lt;h1</span> <span class="a">data-cw-id</span>="title1"<span class="t">&gt;</span>Slow travel, planned in minutes.<span class="t">&lt;/h1&gt;</span>
-    <span class="t">&lt;cw-for</span> <span class="a">each</span>="{{ routes }}" <span class="a">as</span>="route"<span class="t">&gt;</span>
-      <span class="t">&lt;p</span> <span class="a">data-cw-id</span>="route1"<span class="t">&gt;</span>{{ route.name }}<span class="t">&lt;/p&gt;</span>
-    <span class="t">&lt;/cw-for&gt;</span>
-  <span class="t">&lt;/main&gt;</span>
-<span class="t">&lt;/cw-design&gt;</span>
-<span class="c">&lt;!-- después van las variables (Tweaks) y la lógica --&gt;</span></pre>
+<pre class="code" aria-label="Parte de un archivo de diseño"><span class="t">&lt;cw-if</span> <span class="a">data-cw-id</span>="00000a" <span class="a">test</span>="{{ view === 'inicio' }}"<span class="t">&gt;</span>
+  <span class="t">&lt;section</span> <span class="a">data-cw-id</span>="00001c" <span class="a">class</span>="hero"<span class="t">&gt;</span>
+    <span class="t">&lt;img</span> <span class="a">data-cw-id</span>="000036" <span class="a">src</span>="./assets/statue-amparo-gray.png"<span class="t">&gt;</span>
+    <span class="t">&lt;h1</span> <span class="a">data-cw-id</span>="000020"<span class="t">&gt;</span>{{ headline }}<span class="t">&lt;/h1&gt;</span>
+  <span class="t">&lt;/section&gt;</span>
+<span class="t">&lt;/cw-if&gt;</span>
+<span class="c">&lt;!-- una vista de cuatro; el lienzo muestra un frame por cada una --&gt;</span>
+<span class="t">&lt;script</span> <span class="a">type</span>="application/json" <span class="a">data-cw-props</span><span class="t">&gt;</span>
+{ "view": { "type": "enum", "views": true,
+    "options": ["inicio", "asistente", "privacidad", "perfil"] } }
+<span class="t">&lt;/script&gt;</span></pre>
         </div>
       </section>
 
@@ -130,7 +132,7 @@
         <div class="canvas-shot">
           <picture>
             <source srcset="../assets/screenshots/canvas-dark.webp" media="(prefers-color-scheme: dark)" />
-            <img src="../assets/screenshots/canvas-light.webp" width="2000" height="1250" loading="lazy" alt="Tres frames uno al lado del otro en el lienzo de Weft Studio: una landing de viajes, una app para pedir café y un panel de analítica." />
+            <img src="../assets/screenshots/canvas-light.webp" width="2000" height="1250" loading="lazy" alt="Cinco frames en el lienzo de Weft Studio: la misma landing de un asistente legal en claro y en oscuro, y sus vistas de asistente, privacidad y perfil." />
           </picture>
         </div>
         <dl class="features">
