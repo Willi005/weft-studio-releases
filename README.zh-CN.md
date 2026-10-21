@@ -30,7 +30,7 @@
   <a href="https://github.com/Willi005/weft-studio-releases/releases"><b>下载</b></a>
 </p>
 
-![Weft Studio 编辑器：画布上的落地页标题被选中，右侧是样式检查器，左侧聊天框里是给智能体的请求](docs/assets/screenshots/editor-dark.webp)
+![Weft Studio 编辑器：画布上一个法律助手落地页的标题被选中，右侧是样式检查器，左侧是与智能体的对话](docs/assets/screenshots/editor-dark.webp)
 
 **Weft Studio**是一款设计工具，你和 AI 编程智能体在同一块画布上协作。描述一个页面，看着智能体把它画出来，然后亲手移动、调整样式或改写。每个设计都是一个画框（frame），保存为可读的 HTML 文件（`design.ws.html`），并拥有自己的智能体：**Claude Code、Codex、OpenCode 或 Antigravity**。你的改动和智能体写入的内容都会立即显示。
 
@@ -47,7 +47,7 @@
 - **把设计交给你的代码：** “Send to a coding agent…” 会复制一段提示词，让 Claude Code、Codex、Gemini CLI 或 OpenCode 通过只读的 **MCP** 服务器读取设计，并实现到你的项目中。
 - **项目管理：** 带封面、重命名和回收站的主页。
 
-![画布上并排的三个设计：旅行落地页、咖啡点单应用和数据分析仪表盘](docs/assets/screenshots/canvas-dark.webp)
+![画布上的五个画框：同一落地页的浅色和深色版本，以及助手、隐私和个人资料视图](docs/assets/screenshots/canvas-dark.webp)
 
 ## 安装
 
