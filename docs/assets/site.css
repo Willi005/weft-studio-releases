@@ -1,0 +1,164 @@
+:root {
+  --paper: #f3f3f5;
+  --surface: #ffffff;
+  --ink: #18181b;
+  --muted: #5c5c66;
+  --line: #dcdce2;
+  --thread: #6e56cf;
+  --thread-soft: #c9bdf4;
+  --warp: #b4b4bd;
+  --code-bg: #1d1d22;
+  --code-ink: #e8e8ee;
+  --code-tag: #b9a8f5;
+  --code-attr: #8fc5a8;
+  --font: 'Geist', system-ui, sans-serif;
+  --mono: 'Geist Mono', ui-monospace, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #141417;
+    --surface: #1c1c21;
+    --ink: #ededf1;
+    --muted: #a0a0ab;
+    --line: #2e2e36;
+    --thread: #9d88f0;
+    --thread-soft: #4b3f86;
+    --warp: #3d3d46;
+    --code-bg: #0f0f12;
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --paper: #141417;
+  --surface: #1c1c21;
+  --ink: #ededf1;
+  --muted: #a0a0ab;
+  --line: #2e2e36;
+  --thread: #9d88f0;
+  --thread-soft: #4b3f86;
+  --warp: #3d3d46;
+  --code-bg: #0f0f12;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 17px/1.6 var(--font);
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--thread); outline-offset: 3px; border-radius: 6px; }
+
+.wrap { width: min(1120px, 100% - 32px); margin-inline: auto; }
+
+/* Header */
+.top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 0; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 18px; text-decoration: none; }
+.brand img { width: 32px; height: 32px; }
+.top nav { display: flex; align-items: center; gap: 20px; font-size: 15px; color: var(--muted); }
+.top nav a { text-decoration: none; }
+.top nav a:hover { color: var(--ink); }
+
+/* Hero */
+.hero { padding: 56px 0 40px; }
+.hero h1 {
+  margin: 0;
+  max-width: 18ch;
+  font-size: clamp(42px, 7vw, 84px);
+  line-height: 1;
+  letter-spacing: -0.045em;
+  font-weight: 650;
+}
+.hero p.lead { max-width: 56ch; margin: 24px 0 0; font-size: clamp(18px, 2.2vw, 21px); color: var(--muted); }
+.agents { margin: 18px 0 0; font-size: 15px; color: var(--muted); }
+.agents strong { color: var(--ink); font-weight: 550; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 13px 20px; border-radius: 10px;
+  font-weight: 550; font-size: 16px; text-decoration: none;
+  border: 1px solid var(--line); background: var(--surface);
+}
+.btn.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.btn:hover { border-color: var(--thread); }
+.note { margin-top: 14px; font-size: 14px; color: var(--muted); }
+
+/* The woven band the screenshot rests on: the person's thread (violet) crossing the agent's (grey). */
+.loom { position: relative; margin-top: 56px; }
+.weave {
+  display: block; width: 100%; height: 24px;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+}
+.weave .warp { fill: var(--warp); }
+.weave .weft { fill: var(--thread); }
+.shot {
+  position: relative;
+  margin-top: 20px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: 0 30px 80px -30px rgb(40 30 90 / 35%);
+  background: var(--surface);
+}
+
+/* Sections */
+section { padding: 72px 0 0; }
+h2 { font-size: clamp(28px, 4vw, 40px); line-height: 1.1; letter-spacing: -0.03em; font-weight: 620; margin: 0 0 12px; max-width: 22ch; }
+.sub { color: var(--muted); margin: 0; max-width: 60ch; }
+
+.steps { list-style: none; padding: 0; margin: 36px 0 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 2px solid var(--ink); }
+.steps li { padding: 18px 20px 0 0; }
+.steps li b { display: block; font-size: 15px; color: var(--thread); font-weight: 600; margin-bottom: 6px; }
+.steps li h3 { margin: 0 0 6px; font-size: 19px; letter-spacing: -0.01em; font-weight: 600; }
+.steps li p { margin: 0; color: var(--muted); font-size: 15.5px; }
+
+.split { display: grid; grid-template-columns: 1fr 1.15fr; gap: 40px; align-items: center; margin-top: 36px; }
+pre.code {
+  margin: 0; padding: 22px 24px; border-radius: 12px; overflow-x: auto;
+  background: var(--code-bg); color: var(--code-ink);
+  font: 400 13.5px/1.65 var(--mono);
+}
+.code .t { color: var(--code-tag); }
+.code .a { color: var(--code-attr); }
+.code .c { color: #8b8b96; }
+.split ul { margin: 18px 0 0; padding-left: 20px; color: var(--muted); }
+.split li { margin: 6px 0; }
+
+.features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 48px; margin: 36px 0 0; }
+.features div { padding: 18px 0; border-top: 1px solid var(--line); }
+.features dt { font-weight: 600; font-size: 17px; }
+.features dd { margin: 4px 0 0; color: var(--muted); font-size: 15.5px; }
+
+.canvas-shot { margin-top: 36px; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); }
+
+table.dl { width: 100%; border-collapse: collapse; margin-top: 28px; font-size: 15.5px; }
+.dl th, .dl td { text-align: left; padding: 14px 12px 14px 0; border-top: 1px solid var(--line); vertical-align: top; }
+.dl th { font-weight: 600; white-space: nowrap; }
+.dl code { font: 400 14px var(--mono); background: var(--surface); border: 1px solid var(--line); padding: 2px 6px; border-radius: 5px; }
+
+footer { margin-top: 96px; padding: 28px 0 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14.5px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+
+@media (min-width: 861px) {
+  .dl code { white-space: nowrap; }
+}
+@media (max-width: 860px) {
+  .steps { grid-template-columns: 1fr 1fr; row-gap: 24px; }
+  .split { grid-template-columns: 1fr; }
+  .features { grid-template-columns: 1fr; }
+  .top nav .hide-sm { display: none; }
+}
+@media (max-width: 520px) {
+  .steps { grid-template-columns: 1fr; }
+  .hero { padding-top: 32px; }
+  .dl th, .dl td { display: block; padding: 4px 0; border: 0; }
+  .dl tr { display: block; padding: 12px 0; border-top: 1px solid var(--line); }
+}
+
+p code, li code { font: 400 0.88em var(--mono); background: var(--surface); border: 1px solid var(--line); padding: 1px 5px; border-radius: 5px; }
