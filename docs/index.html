@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weft Studio: design interfaces with AI agents on a live canvas</title>
+  <meta name="description" content="Weft Studio is a desktop app for Linux and Windows to design user interfaces together with Claude Code, Codex, OpenCode or Antigravity. Every design is a readable HTML file you and the agent edit live, then hand over to your code through MCP." />
+  <link rel="canonical" href="https://willi005.github.io/weft-studio-releases/" />
+  <link rel="alternate" hreflang="en" href="https://willi005.github.io/weft-studio-releases/" />
+  <link rel="alternate" hreflang="es" href="https://willi005.github.io/weft-studio-releases/es/" />
+  <link rel="alternate" hreflang="x-default" href="https://willi005.github.io/weft-studio-releases/" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#141417" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Weft Studio" />
+  <meta property="og:title" content="Weft Studio: design interfaces with AI agents on a live canvas" />
+  <meta property="og:description" content="Design UIs with Claude Code, Codex, OpenCode or Antigravity. Every design is a readable HTML file, edited live by you and the agent." />
+  <meta property="og:url" content="https://willi005.github.io/weft-studio-releases/" />
+  <meta property="og:image" content="https://willi005.github.io/weft-studio-releases/assets/social-preview.png" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="640" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Weft Studio",
+    "applicationCategory": "DesignApplication",
+    "operatingSystem": "Linux x86_64, Windows 11 x64",
+    "description": "Desktop app to design user interfaces together with AI coding agents (Claude Code, Codex, OpenCode, Antigravity) on a live canvas.",
+    "url": "https://willi005.github.io/weft-studio-releases/",
+    "downloadUrl": "https://github.com/Willi005/weft-studio-releases/releases",
+    "image": "https://willi005.github.io/weft-studio-releases/assets/screenshots/editor-dark.webp",
+    "screenshot": "https://willi005.github.io/weft-studio-releases/assets/screenshots/canvas-dark.webp"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="./"><img src="assets/logo.svg" alt="" width="32" height="32" />Weft Studio</a>
+      <nav aria-label="Main">
+        <a class="hide-sm" href="#how">How it works</a>
+        <a class="hide-sm" href="#download">Download</a>
+        <a href="https://github.com/Willi005/weft-studio-releases">GitHub</a>
+        <a href="es/" hreflang="es" lang="es">Español</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <h1>Design interfaces with your AI agent, on a live canvas.</h1>
+        <p class="lead">Weft Studio is a desktop design tool where you and a coding agent work on the same screen. Describe what you want, watch the agent draw it, then move, restyle and rewrite it by hand. Every change lands in a readable HTML file.</p>
+        <p class="agents">Works with <strong>Claude Code</strong>, <strong>Codex</strong>, <strong>OpenCode</strong> and <strong>Antigravity</strong>, using the accounts you already have.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/Willi005/weft-studio-releases/releases">Download for Linux or Windows</a>
+          <a class="btn" href="https://github.com/Willi005/weft-studio-releases">View on GitHub</a>
+        </div>
+        <p class="note">Beta. Linux x86_64 (AppImage, .deb) and Windows 11 x64. Updates itself from inside the app.</p>
+
+        <div class="loom">
+          <svg class="weave" aria-hidden="true">
+            <defs>
+              <pattern id="weave" width="24" height="24" patternUnits="userSpaceOnUse">
+                <rect class="weft" x="0" y="3" width="24" height="6" />
+                <rect class="weft" x="0" y="15" width="24" height="6" />
+                <rect class="warp" x="3" y="0" width="6" height="24" />
+                <rect class="warp" x="15" y="0" width="6" height="24" />
+                <rect class="weft" x="2" y="3" width="8" height="6" />
+                <rect class="weft" x="14" y="15" width="8" height="6" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#weave)" />
+          </svg>
+          <div class="shot">
+            <picture>
+              <source srcset="assets/screenshots/editor-dark.webp" media="(prefers-color-scheme: dark)" />
+              <img src="assets/screenshots/editor-light.webp" width="2000" height="1250" alt="The Weft Studio editor: a landing page design on the canvas with its headline selected, the style inspector on the right and a request to the agent typed in the chat on the left." />
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <section id="how" aria-labelledby="how-title">
+        <h2 id="how-title">From a sentence to code you can ship</h2>
+        <p class="sub">Each design is a frame on the canvas with its own agent and its own history.</p>
+        <ol class="steps">
+          <li><b>1</b><h3>Describe it</h3><p>Ask for a screen in the chat. Try one, two or three directions at once, each with its own agent and model.</p></li>
+          <li><b>2</b><h3>Watch it appear</h3><p>The agent writes the design file and the canvas updates while it writes. It can ask you questions first.</p></li>
+          <li><b>3</b><h3>Refine by hand</h3><p>Select, drag and resize. Change text, colour and spacing in the inspector. Point the agent at elements you selected.</p></li>
+          <li><b>4</b><h3>Hand it to your code</h3><p>Your coding agent reads the design through a read-only MCP server and builds it into your project.</p></li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="file-title">
+        <h2 id="file-title">The design is a file you can read</h2>
+        <div class="split">
+          <div>
+            <p class="sub">No proprietary canvas format. A design is plain HTML with ids, variables and a small logic class, saved as <code>design.ws.html</code> and versioned with Git.</p>
+            <ul>
+              <li>Agents write it with the tools they already use.</li>
+              <li>Exports open in any browser, as HTML or a ZIP with its assets.</li>
+              <li>Imports Claude Design <code>.dc.html</code> files.</li>
+            </ul>
+          </div>
+<pre class="code" aria-label="Part of a design file"><span class="t">&lt;cw-design</span> <span class="a">version</span>="1"<span class="t">&gt;</span>
+  <span class="t">&lt;main</span> <span class="a">data-cw-id</span>="main01" <span class="a">style</span>="padding:56px"<span class="t">&gt;</span>
+    <span class="t">&lt;h1</span> <span class="a">data-cw-id</span>="title1"<span class="t">&gt;</span>Slow travel, planned in minutes.<span class="t">&lt;/h1&gt;</span>
+    <span class="t">&lt;cw-for</span> <span class="a">each</span>="{{ routes }}" <span class="a">as</span>="route"<span class="t">&gt;</span>
+      <span class="t">&lt;p</span> <span class="a">data-cw-id</span>="route1"<span class="t">&gt;</span>{{ route.name }}<span class="t">&lt;/p&gt;</span>
+    <span class="t">&lt;/cw-for&gt;</span>
+  <span class="t">&lt;/main&gt;</span>
+<span class="t">&lt;/cw-design&gt;</span>
+<span class="c">&lt;!-- variables (Tweaks) and logic follow --&gt;</span></pre>
+        </div>
+      </section>
+
+      <section aria-labelledby="features-title">
+        <h2 id="features-title">Everything in one window</h2>
+        <div class="canvas-shot">
+          <picture>
+            <source srcset="assets/screenshots/canvas-dark.webp" media="(prefers-color-scheme: dark)" />
+            <img src="assets/screenshots/canvas-light.webp" width="2000" height="1250" loading="lazy" alt="Three frames side by side on the Weft Studio canvas: a travel landing page, a coffee ordering mobile app and an analytics dashboard." />
+          </picture>
+        </div>
+        <dl class="features">
+          <div><dt>Multi-screen apps</dt><dd>One design can declare its views, such as home, pricing and contact, and the canvas shows a frame for each.</dd></div>
+          <div><dt>Your own assets</dt><dd>Upload images, GIFs and videos to a design. The agent knows they exist and uses them.</dd></div>
+          <div><dt>Versions</dt><dd>Every valid agent turn saves a version. Restore or discard from the frame's history.</dd></div>
+          <div><dt>Comments and Present</dt><dd>Pin comments to elements, then present the design full screen, live and interactive.</dd></div>
+          <div><dt>Export</dt><dd>Readable HTML with its runtime, a ZIP with assets, or PNG and JPEG pictures of a frame or a selection.</dd></div>
+          <div><dt>Projects</dt><dd>A home screen with covers, renaming and trash, so finished work stays out of the way.</dd></div>
+        </dl>
+      </section>
+
+      <section id="download" aria-labelledby="download-title">
+        <h2 id="download-title">Download</h2>
+        <p class="sub">Get the latest beta from the <a href="https://github.com/Willi005/weft-studio-releases/releases">releases page</a>. You need git and at least one agent with its account; the welcome screen finds the ones you have and offers to install the rest.</p>
+        <table class="dl">
+          <tbody>
+            <tr><th scope="row">Linux x86_64</th><td><code>Weft-Studio-&lt;version&gt;-x86_64.AppImage</code></td><td>Make it executable and open it.</td></tr>
+            <tr><th scope="row">Debian / Ubuntu</th><td><code>weft-studio_&lt;version&gt;_amd64.deb</code></td><td><code>sudo apt install ./weft-studio_&lt;version&gt;_amd64.deb</code></td></tr>
+            <tr><th scope="row">Windows 11 x64</th><td><code>Weft-Studio-&lt;version&gt;-x64-Setup.exe</code></td><td>Installs for your user, without admin rights. Not code-signed yet: check it against <code>SHA256SUMS.txt</code>.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <span>Weft Studio is in beta.</span>
+      <span><a href="https://github.com/Willi005/weft-studio-releases/releases">Release notes</a> · <a href="es/" hreflang="es" lang="es">Leer en español</a></span>
+    </footer>
+  </div>
+</body>
+</html>
