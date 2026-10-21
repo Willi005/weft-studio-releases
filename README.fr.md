@@ -32,7 +32,7 @@ Une application de bureau pour Linux et Windows, compatible avec Claude Code, Co
 
 ![L'éditeur Weft Studio : une landing page sur le canevas avec son titre sélectionné, l'inspecteur de styles à droite et une demande à l'agent dans le chat](docs/assets/screenshots/editor-dark.webp)
 
-**Weft Studio** (anciennement CodeWeaves Studio) est un outil de design où vous et un agent IA travaillez sur le même canevas. Décrivez un écran, regardez l'agent le dessiner, puis déplacez-le, changez son style ou réécrivez-le à la main. Chaque design est un frame enregistré dans un fichier HTML lisible (`design.ws.html`) et possède son propre agent : **Claude Code, Codex, OpenCode ou Antigravity**. Vos modifications et ce qu'écrit l'agent apparaissent instantanément.
+**Weft Studio** est un outil de design où vous et un agent IA travaillez sur le même canevas. Décrivez un écran, regardez l'agent le dessiner, puis déplacez-le, changez son style ou réécrivez-le à la main. Chaque design est un frame enregistré dans un fichier HTML lisible (`design.ws.html`) et possède son propre agent : **Claude Code, Codex, OpenCode ou Antigravity**. Vos modifications et ce qu'écrit l'agent apparaissent instantanément.
 
 Ce dépôt ne publie que les installateurs ; le code source n'est pas ici.
 

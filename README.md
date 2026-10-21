@@ -32,7 +32,7 @@ A desktop app for Linux and Windows that works with Claude Code, Codex, OpenCode
 
 ![The Weft Studio editor: a landing page on the canvas with its headline selected, the style inspector on the right and a request to the agent in the chat](docs/assets/screenshots/editor-dark.webp)
 
-**Weft Studio** (formerly CodeWeaves Studio) is a design tool where you and an AI coding agent work on the same canvas. Describe a screen, watch the agent draw it, then move, restyle and rewrite it by hand. Each design is a frame saved as a readable HTML file (`design.ws.html`) and has its own agent: **Claude Code, Codex, OpenCode or Antigravity**. What you change and what the agent writes both show up instantly.
+**Weft Studio** is a design tool where you and an AI coding agent work on the same canvas. Describe a screen, watch the agent draw it, then move, restyle and rewrite it by hand. Each design is a frame saved as a readable HTML file (`design.ws.html`) and has its own agent: **Claude Code, Codex, OpenCode or Antigravity**. What you change and what the agent writes both show up instantly.
 
 This repository publishes the installers; the source code is not here.
 
@@ -74,7 +74,6 @@ When you uninstall on Windows, the uninstaller asks separately whether to delete
 
 The app checks this repository for new versions when it opens and every six hours, and tells you what is new. It only downloads and installs when you ask: **Update** downloads, **Restart to update** installs and reopens the app, and **Settings → Updates** checks right away. The AppImage, the `.deb` and the Windows installer all update from inside the app.
 
-**Coming from CodeWeaves Studio?** It updates itself to Weft Studio and keeps your projects, accounts and settings. Up to 0.2.0-beta.6 the files were called `CodeWeaves-Studio-<version>-x86_64.AppImage`, `codeweaves-studio_<version>_amd64.deb` and `CodeWeaves-Studio-<version>-x64-Setup.exe`; each release still carries copies under those names for old installs.
 
 ## Status
 

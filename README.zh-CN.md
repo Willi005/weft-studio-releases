@@ -32,7 +32,7 @@
 
 ![Weft Studio 编辑器：画布上的落地页标题被选中，右侧是样式检查器，左侧聊天框里是给智能体的请求](docs/assets/screenshots/editor-dark.webp)
 
-**Weft Studio**（原名 CodeWeaves Studio）是一款设计工具，你和 AI 编程智能体在同一块画布上协作。描述一个页面，看着智能体把它画出来，然后亲手移动、调整样式或改写。每个设计都是一个画框（frame），保存为可读的 HTML 文件（`design.ws.html`），并拥有自己的智能体：**Claude Code、Codex、OpenCode 或 Antigravity**。你的改动和智能体写入的内容都会立即显示。
+**Weft Studio**是一款设计工具，你和 AI 编程智能体在同一块画布上协作。描述一个页面，看着智能体把它画出来，然后亲手移动、调整样式或改写。每个设计都是一个画框（frame），保存为可读的 HTML 文件（`design.ws.html`），并拥有自己的智能体：**Claude Code、Codex、OpenCode 或 Antigravity**。你的改动和智能体写入的内容都会立即显示。
 
 本仓库只发布安装包，源代码不在这里。
 

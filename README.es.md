@@ -32,7 +32,7 @@ Una app de escritorio para Linux y Windows que funciona con Claude Code, Codex, 
 
 ![El editor de Weft Studio: una landing en el lienzo con su titular seleccionado, el inspector de estilos a la derecha y un pedido al agente en el chat](docs/assets/screenshots/editor-dark.webp)
 
-**Weft Studio** (antes CodeWeaves Studio) es una herramienta de diseño en la que tú y un agente de IA trabajáis sobre el mismo lienzo. Describes una pantalla, ves cómo el agente la dibuja y después la mueves, le cambias el estilo o la reescribes a mano. Cada diseño es un frame guardado como un archivo HTML legible (`design.ws.html`) y tiene su propio agente: **Claude Code, Codex, OpenCode o Antigravity**. Lo que cambias tú y lo que escribe el agente se ve al instante.
+**Weft Studio** es una herramienta de diseño en la que tú y un agente de IA trabajáis sobre el mismo lienzo. Describes una pantalla, ves cómo el agente la dibuja y después la mueves, le cambias el estilo o la reescribes a mano. Cada diseño es un frame guardado como un archivo HTML legible (`design.ws.html`) y tiene su propio agente: **Claude Code, Codex, OpenCode o Antigravity**. Lo que cambias tú y lo que escribe el agente se ve al instante.
 
 Este repositorio solo publica los instaladores; el código no está aquí.
 
@@ -74,7 +74,6 @@ Al desinstalar en Windows, el desinstalador te pregunta aparte si borra la confi
 
 La app busca versiones nuevas en este repositorio al abrirse y cada seis horas, y avisa con las novedades. Solo descarga e instala cuando tú lo pides: **Update** descarga la versión, **Restart to update** la instala y vuelve a abrir la app, y **Settings → Updates** busca en el momento. La AppImage, el `.deb` y el instalador de Windows se actualizan desde la app.
 
-**¿Vienes de CodeWeaves Studio?** Se actualiza sola a Weft Studio y conserva tus proyectos, cuentas y ajustes. Hasta la 0.2.0-beta.6 los archivos se llamaban `CodeWeaves-Studio-<versión>-x86_64.AppImage`, `codeweaves-studio_<versión>_amd64.deb` y `CodeWeaves-Studio-<versión>-x64-Setup.exe`; cada release sigue llevando copias con esos nombres para las instalaciones antiguas.
 
 ## Estado
 
